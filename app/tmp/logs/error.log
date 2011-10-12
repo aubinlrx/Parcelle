@@ -1,0 +1,493 @@
+2011-10-10 11:38:59 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 11:39:28 Error: [MissingActionException] Action WorksController::ajouter() could not be found.
+#0 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(WorksController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-10 11:39:51 Error: [MissingViewException] View file "C:\wamp\www\parcelle2\app\View\Works\index.ctp" is missing.
+#0 C:\wamp\www\parcelle2\lib\Cake\View\View.php(363): View->_getViewFileName(NULL)
+#1 C:\wamp\www\parcelle2\lib\Cake\Controller\Controller.php(900): View->render(NULL, NULL)
+#2 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(113): Controller->render()
+#3 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(WorksController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-10 11:40:52 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:02:11 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:27:48 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:27:50 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:33:46 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:48:56 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:55:48 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:55:50 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:57:27 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 12:57:41 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 13:45:59 Error: [MissingViewException] View file "C:\wamp\www\parcelle2\app\View\Users\ajouter.ctp" is missing.
+#0 C:\wamp\www\parcelle2\lib\Cake\View\View.php(363): View->_getViewFileName(NULL)
+#1 C:\wamp\www\parcelle2\lib\Cake\Controller\Controller.php(900): View->render(NULL, NULL)
+#2 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(113): Controller->render()
+#3 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-10 13:53:07 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+#0 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(645): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\parcelle2\lib\Cake\Model\Model.php(2452): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(84): Model->find('first', Array)
+#6 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaa')
+#7 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\parcelle2\app\Controller\UsersController.php(35): AuthComponent->login()
+#10 [internal function]: UsersController->login()
+#11 C:\wamp\www\parcelle2\lib\Cake\Controller\Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2011-10-10 13:54:23 Error: [PDOException] SQLSTATE[42S22]: Column not found: 1054 Unknown column 'User.username' in 'where clause'
+#0 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(436): PDOStatement->execute(Array)
+#1 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(403): DboSource->_execute('SELECT `User`.`...', Array)
+#2 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(645): DboSource->execute('SELECT `User`.`...', Array, Array)
+#3 C:\wamp\www\parcelle2\lib\Cake\Model\Datasource\DboSource.php(1040): DboSource->fetchAll('SELECT `User`.`...', false)
+#4 C:\wamp\www\parcelle2\lib\Cake\Model\Model.php(2452): DboSource->read(Object(User), Array)
+#5 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\Auth\BaseAuthenticate.php(84): Model->find('first', Array)
+#6 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\Auth\FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaa')
+#7 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#8 C:\wamp\www\parcelle2\lib\Cake\Controller\Component\AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#9 C:\wamp\www\parcelle2\app\Controller\UsersController.php(35): AuthComponent->login()
+#10 [internal function]: UsersController->login()
+#11 C:\wamp\www\parcelle2\lib\Cake\Controller\Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#12 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#13 C:\wamp\www\parcelle2\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#14 C:\wamp\www\parcelle2\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#15 {main}
+2011-10-10 21:53:47 Error: [MissingConnectionException] Database connection "SQLSTATE[28000] [1045] Access denied for user 'root'@'localhost' (using password: NO)" is missing, or could not be created.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Model/Datasource/DboSource.php(244): Mysql->connect()
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Model/ConnectionManager.php(99): DboSource->__construct(Array)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Model/Model.php(3208): ConnectionManager::getDataSource('default')
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Model/Model.php(1019): Model->setDataSource('default')
+#4 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Model/Model.php(3232): Model->setSource('users')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Model/Model.php(1202): Model->getDataSource()
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/Helper/FormHelper.php(198): Model->schema()
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/Helper/FormHelper.php(2237): FormHelper->_introspectModel('User', 'fields', 'User')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/Helper/FormHelper.php(336): FormHelper->setEntity('User', true)
+#9 /Users/AubinDesign/Sites/parcelle2/app/View/Users/login.ctp(6): FormHelper->create('User', Array)
+#10 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(598): include('/Users/AubinDes...')
+#11 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(365): View->_render('/Users/AubinDes...')
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-10 21:55:31 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Works/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(WorksController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-10 21:56:08 Error: [MissingActionException] Action WorksController::ajouter() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(WorksController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-10 21:57:27 Error: [MissingControllerException] Controller class PlotsinformationController could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 21:57:50 Error: [MissingControllerException] Controller class PlotsInformationController could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 21:57:58 Error: [MissingControllerException] Controller class PlotInformationController could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-10 21:58:00 Error: [MissingActionException] Action PlotInformationsController::ajouter() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotInformationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-10 21:58:09 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/PlotInformations/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotInformationsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-10 21:58:18 Error: [PrivateActionException] Private Action PlotInformationsController::admin_ajouter() is not directly accessible.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotInformationsController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 00:27:24 Error: [MissingPluginException] Plugin Users could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(392): CakePlugin::path('Users')
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(216): App::pluginPath('Users')
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(566): App::path('Model', 'Users')
+#3 [internal function]: App::load('User')
+#4 [internal function]: spl_autoload_call('User')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Utility/ClassRegistry.php(135): class_exists('User')
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(81): ClassRegistry::init('Users.User')
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaaa')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/AubinDesign/Sites/parcelle2/app/Controller/UsersController.php(35): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-11 00:29:54 Error: [MissingPluginException] Plugin Users could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(392): CakePlugin::path('Users')
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(216): App::pluginPath('Users')
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(566): App::path('Model', 'Users')
+#3 [internal function]: App::load('User')
+#4 [internal function]: spl_autoload_call('User')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Utility/ClassRegistry.php(135): class_exists('User')
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(81): ClassRegistry::init('Users.User')
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaa')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/AubinDesign/Sites/parcelle2/app/Controller/UsersController.php(35): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-11 00:30:31 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/PlotInformations/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotInformationsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 00:53:34 Error: [MissingPluginException] Plugin Users could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(392): CakePlugin::path('Users')
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(216): App::pluginPath('Users')
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(566): App::path('Model', 'Users')
+#3 [internal function]: App::load('User')
+#4 [internal function]: spl_autoload_call('User')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Utility/ClassRegistry.php(135): class_exists('User')
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(81): ClassRegistry::init('Users.User')
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaa')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/AubinDesign/Sites/parcelle2/app/Controller/UsersController.php(35): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-11 01:03:54 Error: [MissingPluginException] Plugin Users could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(392): CakePlugin::path('Users')
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(216): App::pluginPath('Users')
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(566): App::path('Model', 'Users')
+#3 [internal function]: App::load('User')
+#4 [internal function]: spl_autoload_call('User')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Utility/ClassRegistry.php(135): class_exists('User')
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(81): ClassRegistry::init('Users.User')
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'test')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/AubinDesign/Sites/parcelle2/app/Controller/UsersController.php(35): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-11 01:11:41 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:31:36 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:33:51 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Equipment/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(EquipmentController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 01:34:08 Error: [PrivateActionException] Private Action EquipmentController::admin_ajouter() is not directly accessible.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(EquipmentController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:34:25 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:35:33 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:37:42 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:38:43 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:38:49 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:38:51 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:39:08 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:54:01 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:55:50 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 01:56:11 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:15:53 Error: [MissingControllerException] Controller class LogoutController could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-11 02:16:48 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:18:09 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:26:55 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:27:05 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Equipment/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(EquipmentController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 02:31:31 Error: [MissingPluginException] Plugin Users could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(392): CakePlugin::path('Users')
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(216): App::pluginPath('Users')
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(566): App::path('Model', 'Users')
+#3 [internal function]: App::load('User')
+#4 [internal function]: spl_autoload_call('User')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Utility/ClassRegistry.php(135): class_exists('User')
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(81): ClassRegistry::init('Users.User')
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaa')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/AubinDesign/Sites/parcelle2/app/Controller/UsersController.php(35): AuthComponent->login()
+#11 [internal function]: UsersController->login()
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-11 02:31:55 Error: [MissingActionException] Action UsersController::home() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:33:28 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:37:40 Error: [MissingActionException] Action UsersController::home() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:40:43 Error: [MissingControllerException] Controller class AdminController could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-11 02:47:07 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:48:00 Error: [MissingActionException] Action UsersController::admin_login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 02:48:20 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Users/admin_login.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 02:49:07 Error: [MissingPluginException] Plugin Users could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(392): CakePlugin::path('Users')
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(216): App::pluginPath('Users')
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(566): App::path('Model', 'Users')
+#3 [internal function]: App::load('User')
+#4 [internal function]: spl_autoload_call('User')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Utility/ClassRegistry.php(135): class_exists('User')
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(81): ClassRegistry::init('Users.User')
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaa')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/AubinDesign/Sites/parcelle2/app/Controller/UsersController.php(35): AuthComponent->login()
+#11 [internal function]: UsersController->admin_login()
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-11 02:49:29 Error: [MissingPluginException] Plugin Users could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(392): CakePlugin::path('Users')
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(216): App::pluginPath('Users')
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Core/App.php(566): App::path('Model', 'Users')
+#3 [internal function]: App::load('User')
+#4 [internal function]: spl_autoload_call('User')
+#5 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Utility/ClassRegistry.php(135): class_exists('User')
+#6 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/BaseAuthenticate.php(81): ClassRegistry::init('Users.User')
+#7 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/Auth/FormAuthenticate.php(65): BaseAuthenticate->_findUser('aubin', 'garaa')
+#8 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(624): FormAuthenticate->authenticate(Object(CakeRequest), Object(CakeResponse))
+#9 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Component/AuthComponent.php(505): AuthComponent->identify(Object(CakeRequest), Object(CakeResponse))
+#10 /Users/AubinDesign/Sites/parcelle2/app/Controller/UsersController.php(35): AuthComponent->login()
+#11 [internal function]: UsersController->admin_login()
+#12 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(475): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#13 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#14 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#15 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 {main}
+2011-10-11 02:49:38 Error: [MissingActionException] Action UsersController::login() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 03:04:08 Error: [MissingActionException] Action UsersController::logout() could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
+#2 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-11 12:51:02 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/PlotInformations/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotInformationsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:51:07 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Equipment/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(EquipmentController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:51:16 Error: [MissingControllerException] Controller class EquipmentInTypesController could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-11 12:51:35 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/EquipmentTypes/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(EquipmentTypesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:51:44 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Tasks/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(TasksController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:51:54 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Works/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(WorksController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:53:42 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Workers/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(WorkersController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:53:57 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/WorkTypes/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(WorkTypesController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:54:07 Error: [MissingControllerException] Controller class PlotController could not be found.
+#0 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-11 12:55:32 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Plots/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:56:16 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Plots/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-11 12:56:17 Error: [MissingViewException] View file "/Users/AubinDesign/Sites/parcelle2/app/View/Plots/index.ctp" is missing.
+#0 /Users/AubinDesign/Sites/parcelle2/lib/Cake/View/View.php(363): View->_getViewFileName(NULL)
+#1 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Controller/Controller.php(900): View->render(NULL, NULL)
+#2 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(113): Controller->render()
+#3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
