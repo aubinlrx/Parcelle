@@ -491,3 +491,54 @@
 #3 /Users/AubinDesign/Sites/parcelle2/lib/Cake/Routing/Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
 #4 /Users/AubinDesign/Sites/parcelle2/app/webroot/index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #5 {main}
+2011-10-13 15:29:25 Error: [MissingActionException] Action EquipmentController::admin_modifier() could not be found.
+#0 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(EquipmentController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2011-10-13 17:24:50 Error: [MissingActionException] Action Plots::admin_modifier() could not be found.
+#0 C:\wamp\www\parcelle\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(520): Scaffold->__construct(Object(PlotsController), Object(CakeRequest))
+#2 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(479): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2011-10-13 17:53:06 Error: [MissingActionException] Action Plots::admin_index() could not be found.
+#0 C:\wamp\www\parcelle\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(520): Scaffold->__construct(Object(PlotsController), Object(CakeRequest))
+#2 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(479): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2011-10-13 17:53:16 Error: [MissingViewException] View file "C:\wamp\www\parcelle\app\View\Plots\index.ctp" is missing.
+#0 C:\wamp\www\parcelle\lib\Cake\View\View.php(363): View->_getViewFileName(NULL)
+#1 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(900): View->render(NULL, NULL)
+#2 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(113): Controller->render()
+#3 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-13 17:54:05 Error: [MissingViewException] View file "C:\wamp\www\parcelle\app\View\Plots\index.ctp" is missing.
+#0 C:\wamp\www\parcelle\lib\Cake\View\View.php(363): View->_getViewFileName(NULL)
+#1 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(900): View->render(NULL, NULL)
+#2 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(113): Controller->render()
+#3 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#4 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 {main}
+2011-10-13 17:55:37 Error: [MissingActionException] Action Plots::admin_modifier() could not be found.
+#0 C:\wamp\www\parcelle\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(520): Scaffold->__construct(Object(PlotsController), Object(CakeRequest))
+#2 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(479): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}
+2011-10-13 17:56:22 Error: [MissingActionException] Action Plots::admin_index() could not be found.
+#0 C:\wamp\www\parcelle\lib\Cake\Controller\Scaffold.php(150): Scaffold->_scaffold(Object(CakeRequest))
+#1 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(520): Scaffold->__construct(Object(PlotsController), Object(CakeRequest))
+#2 C:\wamp\www\parcelle\lib\Cake\Controller\Controller.php(479): Controller->_getScaffold(Object(CakeRequest))
+#3 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#4 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(PlotsController), Object(CakeRequest), Object(CakeResponse))
+#5 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#6 {main}

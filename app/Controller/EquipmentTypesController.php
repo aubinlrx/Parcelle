@@ -5,12 +5,18 @@
 	
 		//var $scaffold;
 	
+		/*
+		*	Function permettant l'affichage de tous les types d'équipement.
+		*/
 		function index() {
 		
 				$this->set('equipmentTypes', $this->EquipmentType->find('all'));
 		
 		}
 		
+		/*
+		*	Function permettant d'afficher un seul type d'équipement.
+		*/
 		function afficher($id = null) {
 		
 			$this->EquipmentType->id = $id;
@@ -18,6 +24,10 @@
 		
 		}
 		
+		/*
+		*	Function permettant d'ajouter un nouveau type d'équipement.
+		*	!! Seulement disponible pour les administrateurs
+		*/
 		function admin_ajouter() {
 		
 			if(!empty($this->request->data)) {
@@ -29,6 +39,11 @@
 		
 		}
 		
+		/*
+		*	Function permettant de supprimer un type d'équipement.
+		*	!! Seulement disponible pour les administrateurs
+		*	@param : $id du type d'équipement à supprimer.
+		*/
 		function admin_supprimer($id) {
 		
 			$this->EquipmentType->delete($id);
@@ -36,6 +51,11 @@
 		
 		}
 		
+		/*
+		*	Function permettant d'éditer un type d'équipement.
+		*	!! Seulement disponible pour les administrateurs
+		*	@param : $id du type d'équipement à éditer.
+		*/
 		function admin_editer($id = null) {
 		
 			if(empty($this->request->data)){

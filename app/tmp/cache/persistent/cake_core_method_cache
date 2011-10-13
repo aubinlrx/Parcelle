@@ -1,2 +1,2 @@
-1318331138
-a:2:{s:4:"name";a:6:{i:533712760;s:10:"`parcelle`";i:-1188474944;s:20:"`EquipmentType`.`id`";i:-1551950275;s:23:"`EquipmentType`.`label`";i:1208949846;s:17:"`equipment_types`";i:-220462612;s:15:"`EquipmentType`";i:856369976;s:11:"`equipment`";}s:6:"fields";a:1:{s:32:"c6c2c245b2ef2d5ec1a74db1337a1969";a:2:{i:0;s:20:"`EquipmentType`.`id`";i:1;s:23:"`EquipmentType`.`label`";}}}
+1318529683
+a:1:{s:4:"name";a:3:{i:533712760;s:10:"`parcelle`";i:942106786;s:7:"`plots`";i:-792021014;s:19:"`plot_informations`";}}

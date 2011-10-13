@@ -1,3 +1,4 @@
+
 <?php 
 	Class EquipmentController extends AppController {
 	
@@ -5,12 +6,19 @@
 		
 		//var $scaffold;
 		
+		/*
+		*	Function gérant l'affichage de tous les équipements
+		*/
 		function index() {
 		
 			$this->set('equipments', $this->Equipment->find('all'));
 		
 		}
 		
+		/*
+		*	Function permettant d'afficher un élément
+		*	@param : $id de l'élement.
+		*/
 		function afficher($id = null) {
 		
 			$this->Equipment->id = $id;
@@ -18,6 +26,10 @@
 		
 		}
 		
+		/*
+		*	Function gérant l'ajout d'un nouvel équipement.
+		*	!! Seulement disponible pour les administrateurs.
+		*/
 		function admin_ajouter() {
 		
 			$this->set('equipmentTypes', $this->Equipment->EquipmentType->find('list', array('fields' => array('id', 'label'), 'order' => 'EquipmentType.label ASC')));
@@ -31,6 +43,11 @@
 		
 		}
 		
+		/*
+		*	Function permettant de gérer la suppression d'un équipement.
+		*	!! Seulement disponible pour les administrateurs.
+		*	@param : $id de l'élément à supprimer.
+		*/
 		function admin_supprimer($id) {
 		
 			$this->Equipment->delete($id);
@@ -38,6 +55,11 @@
 		
 		}
 		
+		/*
+		*	Function gérant l'édition d'un élément
+		*	!! Seulement disponible pour les administrateurs
+		*	@param ! $id de l'élément à modifier.
+		*/
 		function admin_editer($id = null) {
 		
 			$this->set('equipmentTypes', $this->Equipment->EquipmentType->find('list', array('fields' => array('id', 'label'), 'order' => 'EquipmentType.label ASC')));

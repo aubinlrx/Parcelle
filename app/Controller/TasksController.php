@@ -5,12 +5,18 @@
 		
 		//var $scaffold;
 		
+		/*
+		*	Function d'affichage de toutes les tâches
+		*/
 		function index() {
 		
 			$this->set('tasks', $this->Task->find('all'));
 		
 		}
 		
+		/*
+		*	Function d'affichage d'une tâche en particulier
+		*/
 		function afficher($id = null) {
 		
 			$this->Task->id = $id;
@@ -18,6 +24,10 @@
 		
 		}
 		
+		/*
+		*	Function gérant l'ajout d'une nouvelle tâche
+		*	!! Seulement disponible pour les administrateurs
+		*/
 		function admin_ajouter() {
 		
 			$this->set('works', $this->Task->Work->find('list', array('fields' => array('id', 'label'), 'order' => 'Work.label ASC')));
@@ -37,6 +47,11 @@
 		
 		}
 		
+		/*
+		*	Function gérant la suppression d'une tâche
+		*	!! Seulement disponible pour les administrateurs
+		*	@param : $id de la tâche à supprimer
+		*/
 		function admin_supprimer($id) {
 		
 			$this->Task->delete($id);
@@ -44,6 +59,11 @@
 		
 		}
 		
+		/*
+		*	Function gérant l'édition d'une tâche
+		*	!! Seulement disponible pour les administrateurs
+		*	@param : $id de la tâche à éditer.
+		*/
 		function admin_editer($id = null) {
 		
 			$this->set('works', $this->Task->Work->find('list', array('fields' => array('id', 'label'), 'order' => 'Work.label ASC')));

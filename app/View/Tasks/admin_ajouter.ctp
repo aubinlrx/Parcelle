@@ -1,4 +1,4 @@
-<h1>Ajouter une t‰che</h1>
+<h1>Ajouter une tÃ¢che</h1>
 <?php 
 	$task_id = $this->request->data['Task']['id'];
 	

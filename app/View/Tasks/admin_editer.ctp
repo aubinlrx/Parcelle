@@ -1,4 +1,4 @@
-<h1>Modifier la tache</h1>
+<h1>Modifier la tâche</h1>
 <?php
 	$task_id = $this->request->data['Task']['id'];
 	
