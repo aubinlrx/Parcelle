@@ -22,7 +22,6 @@
 				'notEmpty'	=> array('rule' => 'notEmpty', 'allowEmpty' => false, 'required' => true)
 				)
 			);
-		
 	}
 	
 ?>

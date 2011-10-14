@@ -20,14 +20,18 @@
 		*/
 		function ajouter(){
 		
-			$this->set('groups', $this->User->Group->find('list', array('fields' => array('id', 'name'), 'order' => 'Group.name ASC')));
-		
-			if(!empty($this->request->data)) {
-				if($this->User->saveAll($this->request->data)){
-					$this->flash('Votre utilisateur a bien été créé', '/users');
-				}
-				
-			}
+			if ($this->request->is('post')) {
+        	//If the form data can be validated and saved...
+        		if ($this->User->save($this->data)) {
+            	//Set a session flash message and redirect.
+            		$this->Session->setFlash("Votre utilisateur a bien été créé");
+            		$this->redirect('/admin');
+        		}
+    		}
+
+    		//If no form data, find the recipe to be edited
+    		//and hand it to the view.
+    		$this->set('groups', $this->User->Group->find('list', array('fields' => array('id', 'name'), 'order' => 'Group.name ASC')));
 		}
 		
 		/*
