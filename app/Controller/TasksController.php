@@ -6,7 +6,7 @@
 		//var $scaffold;
 		
 		/*
-		*	Function d'affichage de toutes les t?ches
+		*	Function d'affichage de toutes les tâches
 		*/
 		function index() {
 		
@@ -15,7 +15,7 @@
 		}
 		
 		/*
-		*	Function d'affichage d'une t?che en particulier
+		*	Function d'affichage d'une tâche en particulier
 		*/
 		function afficher($id = null) {
 		
@@ -25,7 +25,7 @@
 		}
 		
 		/*
-		*	Function g?rant l'ajout d'une nouvelle t?che
+		*	Function gérant l'ajout d'une nouvelle tâche
 		*	!! Seulement disponible pour les administrateurs
 		*/
 		function admin_ajouter() {
@@ -69,19 +69,19 @@
 		/*
 		*	Function gérant la suppression d'une tâche
 		*	!! Seulement disponible pour les administrateurs
-		*	@param : $id de la t?che ? supprimer
+		*	@param : $id de la tâche à supprimer
 		*/
 		function admin_supprimer($id) {
 		
-			$this->Task->delete($id);
-			$this->flash('L\'ouvrier a ?t? supprim?', '/tasks');
+			$this->Task->deleteAll($id);
+			$this->Session->setFlash('La tache a été supprimé');
 		
 		}
 		
 		/*
-		*	Function g?rant l'?dition d'une t?che
+		*	Function gérant l'édition d'une tâche
 		*	!! Seulement disponible pour les administrateurs
-		*	@param : $id de la t?che ? ?diter.
+		*	@param : $id de la tâche à éditer.
 		*/
 		function admin_editer($id = null) {
 			
@@ -97,7 +97,7 @@
 				if($this->request->is('post')) {
 				//If the form data can be validated and saved...
 
-					$error = $this->validation_formulaire($this->request->data);
+					$error = $this->validation_formulaire($this->request->data['Task']);
 
 					if($error[1] !== 1 && $this->Task->saveAll($this->request->data)){
 						$this->Session->setFlash('la modification a eu lieu avec succés');

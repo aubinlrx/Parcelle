@@ -7,7 +7,7 @@
 		//var $scaffold;
 		
 		/*
-		*	Function gÈrant l'affichage de tous les Èquipements
+		*	Function g√©rant l'affichage de tous les √©quipements
 		*/
 		function index() {
 		
@@ -16,8 +16,8 @@
 		}
 		
 		/*
-		*	Function permettant d'afficher un ÈlÈment
-		*	@param : $id de l'Èlement.
+		*	Function permettant d'afficher un √©l√©ment
+		*	@param : $id de l'√©lement.
 		*/
 		function afficher($id = null) {
 		
@@ -27,38 +27,39 @@
 		}
 		
 		/*
-		*	Function gÈrant l'ajout d'un nouvel Èquipement.
+		*	Function g√©rant l'ajout d'un nouvel √©quipement.
 		*	!! Seulement disponible pour les administrateurs.
 		*/
 		function admin_ajouter() {
 		
+			if ($this->request->is('post')) {
+        	//If the form data can be validated and saved...
+        		if ($this->Equipment->saveAll($this->request->data)) {
+            	//Set a session flash message and redirect.
+            		$this->Session->setFlash("Votre √©quipement a bien √©t√© cr√©√©");
+        		}
+    		}
+
 			$this->set('equipmentTypes', $this->Equipment->EquipmentType->find('list', array('fields' => array('id', 'label'), 'order' => 'EquipmentType.label ASC')));
-		
-			if(!empty($this->request->data)) {
-				if($this->Equipment->saveAll($this->request->data)){
-					$this->flash('Votre ouvrier a bien été créé', '/equipment');
-				}
-				
-			}
 		
 		}
 		
 		/*
-		*	Function permettant de gÈrer la suppression d'un Èquipement.
+		*	Function permettant de g√©rer la suppression d'un √©quipement.
 		*	!! Seulement disponible pour les administrateurs.
-		*	@param : $id de l'ÈlÈment ‡ supprimer.
+		*	@param : $id de l'√©l√©ment √† supprimer.
 		*/
 		function admin_supprimer($id) {
 		
 			$this->Equipment->delete($id);
-			$this->flash('L\'ouvrier a été supprimé', '/equipment');
+			$this->Session->setFlash('L\'√©quipement a √©t√© supprim√©');
 		
 		}
 		
 		/*
-		*	Function gÈrant l'Èdition d'un ÈlÈment
+		*	Function g?rant l'?dition d'un ?l?ment
 		*	!! Seulement disponible pour les administrateurs
-		*	@param ! $id de l'ÈlÈment ‡ modifier.
+		*	@param ! $id de l'?l?ment ? modifier.
 		*/
 		function admin_editer($id = null) {
 		
@@ -68,9 +69,13 @@
 				$this->Equipment->id = $id;
 				$this->request->data = $this->Equipment->read();
 			} else {
-				if($this->Equipment->save($this->request->data['Equipment'])){
-					$this->flash('la modification a eu lieu avec succés', '/equipment');
-				}
+				if ($this->request->is('post')) {
+	        	//If the form data can be validated and saved...
+	        		if ($this->Equipment->saveAll($this->request->data['Equipment'])) {
+	            	//Set a session flash message and redirect.
+	            		$this->Session->setFlash("Votre √©quipement a bien √©t√© modifi√©");
+	        		}
+	    		}
 			}
 		}
 		

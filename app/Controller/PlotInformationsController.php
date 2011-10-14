@@ -29,13 +29,14 @@
 		*	!! Seulement disponible pour les administrateurs
 		*/
 		function admin_ajouter() {
-		
-			if(!empty($this->request->data)) {
-				if($this->PlotInformation->save($this->request->data)){
-					$this->flash('Votre ouvrier a bien été créé', '/PlotInformation');
-				}
-				
-			}
+			
+			if ($this->request->is('post')) {
+        	//If the form data can be validated and saved...
+        		if ($this->PlotInformation->save($this->request->data)) {
+            	//Set a session flash message and redirect.
+            		$this->Session->setFlash("Votre ouvrier a bien été créé");
+        		}
+    		}
 		
 		}
 		
@@ -62,9 +63,13 @@
 				$this->PlotInformation->id = $id;
 				$this->request->data = $this->PlotInformation->read();
 			} else {
-				if($this->PlotInformation->save($this->request->data['PlotInformation'])){
-					$this->flash('la modification a eu lieu avec succés', '/PlotInformation');
-				}
+				if ($this->request->is('post')) {
+	        	//If the form data can be validated and saved...
+	        		if ($this->PlotInformation->save($this->request->data['PlotInformation'])) {
+	            	//Set a session flash message and redirect.
+	            		$this->Session->setFlash("Votre ouvrier a bien été modifié");
+	        		}
+	    		}
 			}
 			
 		

@@ -30,14 +30,14 @@
 		*	!! Seulement disponible pour les administrateurs
 		*/
 		function admin_ajouter() {
-		
-			if(!empty($this->request->data)) {
-				if($this->Plot->saveAll($this->request->data)){
-					$this->flash('Votre ouvrier a bien été créé', '/plot');
-				}
-				
-			}
-		
+
+			if ($this->request->is('post')) {
+        	//If the form data can be validated and saved...
+        		if ($this->Plot->saveAll($this->request->data)) {
+            	//Set a session flash message and redirect.
+            		$this->Session->setFlash("Votre parcelle a bien été créé");
+        		}
+    		}
 		}
 		
 		/*
@@ -48,7 +48,7 @@
 		function admin_supprimer($id) {
 		
 			$this->Plot->delete($id);
-			$this->flash('L\'ouvrier a été supprimé', '/plot');
+			$this->Session->setFlash('La parcelle a été supprimé');
 		
 		}
 		
@@ -63,9 +63,14 @@
 				$this->Plot->id = $id;
 				$this->request->data = $this->Plot->read();
 			} else {
-				if($this->Plot->saveAll($this->request->data)){
-					$this->flash('la modification a eu lieu avec succés', '/plot');
-				}
+
+				if ($this->request->is('post')) {
+	        	//If the form data can be validated and saved...
+	        		if ($this->Plot->saveAll($this->request->data['Plot'])) {
+	            	//Set a session flash message and redirect.
+	            		$this->Session->setFlash("Votre parcelle a bien été modifié");
+	        		}
+	    		}
 			}
 		}
 

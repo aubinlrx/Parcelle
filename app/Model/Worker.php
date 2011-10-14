@@ -8,10 +8,14 @@
 		
 		var $validate = array(
 			'nom' => array(
-				'rule' => array('minLength', 3)
+				'notEmpty'	=> array('rule' => 'notEmpty', 'allowEmpty'	=> false, 'required' => true),
+				'minLength'	=> array('rule' => array('minLength', 3)),
+				'alpha'		=> array('rule'	=> '/^[a-zA-Z]{3,}$/i')
 				), 
 			'prenom' => array(
-				'rule' => array('minLength', 3)
+				'notEmpty'	=> array('rule' => 'notEmpty', 'allowEmpty'	=> false, 'required' => true),
+				'minLength'	=> array('rule' => array('minLength', 2)),
+				'alpha'		=> array('rule'	=> '/^[a-zA-Z]{3,}$/i')
 			)
 		);
 		

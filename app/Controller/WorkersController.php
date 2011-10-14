@@ -5,12 +5,18 @@
 		
 		//var $scaffold;
 		
+		/*
+		*	Function permettant l'affichage de tous les ouvriers.
+		*/
 		function index() {
 		
 			$this->set('workers', $this->Worker->find('all'));
 		
 		}
 		
+		/*
+		*	Function permettant d'afficher un ouvrier en particulier.
+		*/
 		function afficher($id = null) {
 		
 			$this->Worker->id = $id;
@@ -18,35 +24,53 @@
 		
 		}
 		
+		/*
+		*	Function permettant d'ajouter un nouvel ouvrier
+		*	!! Seulement disponible pour les administrateurs
+		*/
 		function admin_ajouter() {
-		
-			if(!empty($this->request->data)) {
-				if($this->Worker->save($this->request->data)){
-					$this->flash('Votre ouvrier a bien été créé', '/worker');
-				}
-				
-			}
-		
+			
+			if ($this->request->is('post')) {
+        	//If the form data can be validated and saved...
+        		if ($this->Worker->save($this->request->data)) {
+            	//Set a session flash message and redirect.
+            		$this->Session->setFlash("Votre utilisateur a bien √©t√© cr√©√©");
+        		}
+    		}
 		}
 		
+		/*
+		*	Function permettant de supprimer un ouvrier
+		*	!! Seulement disponible pour les administrateurs
+		*	@param : $id de l'ouvrier √† supprimer
+		*/
 		function admin_supprimer($id) {
 		
 			$this->Worker->delete($id);
-			$this->flash('L\'ouvrier a ÈtÈ supprimé', '/worker');
+			$this->flash('L\'ouvrier a √©t√© supprim√©', '/worker');
 		
 		}
 		
+		/*
+		*	Function permettant de modifier un ouvrier
+		*	!! Seulement disponible pour les administrateurs
+		*	@param : $id de l'ouvrier √† modifier
+		*/
 		function admin_editer($id = null) {
 		
 			if(empty($this->request->data)){
 				$this->Worker->id = $id;
 				$this->request->data = $this->Worker->read();
 			} else {
-				if($this->Worker->save($this->request->data['Worker'])){
-					$this->flash('la modification a eu lieu avec succés', '/worker');
-				}
-			}
-			
+
+				if ($this->request->is('post')) {
+	        	//If the form data can be validated and saved...
+	        		if ($this->Worker->save($this->request->data['Worker'])) {
+	            	//Set a session flash message and redirect.
+	            		$this->Session->setFlash("Votre utilisateur a bien √©t√© cr√©√©");
+	        		}
+	    		}
+			}	
 		
 		}
 		

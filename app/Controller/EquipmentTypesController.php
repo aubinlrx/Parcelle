@@ -6,7 +6,7 @@
 		//var $scaffold;
 	
 		/*
-		*	Function permettant l'affichage de tous les types d'Èquipement.
+		*	Function permettant l'affichage de tous les types d'√©quipement.
 		*/
 		function index() {
 		
@@ -15,7 +15,7 @@
 		}
 		
 		/*
-		*	Function permettant d'afficher un seul type d'Èquipement.
+		*	Function permettant d'afficher un seul type d'√©quipement.
 		*/
 		function afficher($id = null) {
 		
@@ -25,36 +25,36 @@
 		}
 		
 		/*
-		*	Function permettant d'ajouter un nouveau type d'Èquipement.
+		*	Function permettant d'ajouter un nouveau type d'?quipement.
 		*	!! Seulement disponible pour les administrateurs
 		*/
 		function admin_ajouter() {
 		
-			if(!empty($this->request->data)) {
-				if($this->EquipmentType->save($this->request->data)){
-					$this->flash('Votre ouvrier a bien été créé', '/EquipmentType');
-				}
-					
-			}
-		
+			if ($this->request->is('post')) {
+        	//If the form data can be validated and saved...
+        		if ($this->EquipmentType->save($this->request->data)) {
+            	//Set a session flash message and redirect.
+            		$this->Session->setFlash("Votre type d'√©quipement a bien √©t√© cr√©√©");
+        		}
+    		}
 		}
 		
 		/*
-		*	Function permettant de supprimer un type d'Èquipement.
+		*	Function permettant de supprimer un type d'√©quipement.
 		*	!! Seulement disponible pour les administrateurs
-		*	@param : $id du type d'Èquipement ‡ supprimer.
+		*	@param : $id du type d'√©quipement √† supprimer.
 		*/
 		function admin_supprimer($id) {
 		
 			$this->EquipmentType->delete($id);
-			$this->flash('L\'ouvrier a été supprimé', '/EquipmentType');
+			$this->Session->setFlash('Le type d\'√©quipement a √©t√© supprim√©');
 		
 		}
 		
 		/*
-		*	Function permettant d'Èditer un type d'Èquipement.
+		*	Function permettant d'√©diter un type d'√©quipement.
 		*	!! Seulement disponible pour les administrateurs
-		*	@param : $id du type d'Èquipement ‡ Èditer.
+		*	@param : $id du type d'√©quipement √† √©diter.
 		*/
 		function admin_editer($id = null) {
 		
@@ -62,9 +62,13 @@
 				$this->EquipmentType->id = $id;
 				$this->request->data = $this->EquipmentType->read();
 			} else {
-				if($this->EquipmentType->save($this->request->data['EquipmentType'])){
-					$this->flash('la modification a eu lieu avec succés', '/EquipmentType');
-				}
+				if ($this->request->is('post')) {
+	        	//If the form data can be validated and saved...
+	        		if ($this->EquipmentType->save($this->request->data['EquipmentType'])) {
+	            	//Set a session flash message and redirect.
+	            		$this->Session->setFlash("Votre type d'√©quipement a bien √©t√© modifi√©");
+	        		}
+	    		}
 			}
 			
 		}

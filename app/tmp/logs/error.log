@@ -602,3 +602,11 @@
 #14 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest), Object(CakeResponse))
 #15 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #16 {main}
+2011-10-14 13:35:54 Error: [MissingControllerException] Controller class WorkrsController could not be found.
+#0 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2011-10-14 13:44:15 Error: [MissingActionException] Action WorksController::admin_modifier() could not be found.
+#0 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(106): Controller->invokeAction(Object(CakeRequest))
+#1 C:\wamp\www\parcelle\lib\Cake\Routing\Dispatcher.php(88): Dispatcher->_invoke(Object(WorksController), Object(CakeRequest), Object(CakeResponse))
+#2 C:\wamp\www\parcelle\app\webroot\index.php(96): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
