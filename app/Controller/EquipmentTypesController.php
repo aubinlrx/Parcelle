@@ -17,7 +17,7 @@
 		/*
 		*	Function permettant d'afficher un seul type d'équipement.
 		*/
-		function afficher($id = null) {
+		function admin_afficher($id = null) {
 		
 			$this->EquipmentType->id = $id;
 			$this->set('equipmentType', $this->EquipmentType->read());
